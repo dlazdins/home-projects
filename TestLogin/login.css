@@ -7,11 +7,12 @@
   width: auto;
   height: auto;
   background: #ffff;
-  margin: -40px auto;
+  margin: -38px auto;
 }
 .login-form-header h2{
+  font-weight: 600;
   position: relative;
-  color: rgb(29, 45, 6, 0.8);
+  color: rgb(64, 99, 162);
 }
 .login-form .input-container {
   border-bottom: 1px solid #CCCCCC;
@@ -61,7 +62,13 @@
 .login-form .button-orange:hover {
   background: #f8bf35;
 }
+.signup-form .button-orange:hover {
+  background: #f8bf35;
+}
 .login-form .button-orange:focus {
+  outline: none;
+}
+.signup-form .button-orange:focus {
   outline: none;
 }
 .login-form-content {
