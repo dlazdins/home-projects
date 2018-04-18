@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +24,6 @@
           <div class="content">
             <h2>Don't have an account?</h2> <hr/>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id incidunt blanditiis non sunt dolore quasi molestiae maiores.</p>
-
           </div>
           <input type="button" name="signup" value="SIGN UP" class="button-blue" id="slideLeft"/>
         </div>
@@ -29,12 +31,12 @@
           <div class="content">
             <h2>Have an account?</h2> <hr/>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-
           </div>
           <input type="button" name="login" value="LOGIN" class="button-blue" id="slideRight"/>
         </div>
       </div>
     </div>
+
     <div class="white-banner">
       <div id="login">
         <div class="login-form-container" id="login-form">
@@ -42,7 +44,7 @@
             <div class="login-form-header">
               <h2>Login</h2> <span class="logo"><img src="images/logo.png"/></span><hr/>
             </div>
-            <form method="post" action="" class="login-form">
+            <form method="POST" action="php/login.php" class="login-form">
               <div class="input-container">
                 <i class="fa fa-envelope"></i>
                 <input type="email" class="input" name="email" placeholder="Email" alt="Email"/>
@@ -65,10 +67,10 @@
             <div class="signup-form-header">
               <h2>Sign Up</h2> <span class="logo"><img src="images/logo.png"/></span><hr/>
             </div>
-            <form method="post" action="" class="signup-form">
+            <form method="POST" action="php/signup.php" class="signup-form">
               <div class="input-container">
                 <i class="fa fa-user"></i>
-                <input type="name" class="input" name="name" placeholder="Name"/>
+                <input type="name" class="input" name="username" placeholder="Name"/>
               </div>
               <div class="input-container">
                 <i class="fa fa-envelope"></i>
@@ -86,9 +88,10 @@
         </div>
       </div>
     </div>
+
   </div>
 <!-- red star on placeholder  https://codepen.io/mirobin/pen/mVZLxQ?editors=1010-->
-<footer>  </footer>
+<footer></footer>
 <script src="index.js"></script>
 
 </body>
