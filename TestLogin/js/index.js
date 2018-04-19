@@ -15,5 +15,4 @@ $("document").ready(function(){
       $('#login').fadeIn(100);
     });
   });
-
 });

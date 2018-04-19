@@ -1,5 +1,10 @@
 <?php
   session_start();
+  $errors = [];
+  if (isset($_SESSION['success'])) {
+    echo $_SESSION['success'];
+    unset($_SESSION['success']);
+  }
 ?>
 <!DOCTYPE html>
 <html>
@@ -36,7 +41,6 @@
         </div>
       </div>
     </div>
-
     <div class="white-banner">
       <div id="login">
         <div class="login-form-container" id="login-form">
@@ -47,7 +51,7 @@
             <form method="POST" action="php/login.php" class="login-form">
               <div class="input-container">
                 <i class="fa fa-envelope"></i>
-                <input type="email" class="input" name="email" placeholder="Email" alt="Email"/>
+                <input type="email" class="input" name="email" placeholder="Email"/>
               </div>
               <div class="input-container">
                 <i class="fa fa-lock"></i>
@@ -88,11 +92,9 @@
         </div>
       </div>
     </div>
-
   </div>
-<!-- red star on placeholder  https://codepen.io/mirobin/pen/mVZLxQ?editors=1010-->
-<footer></footer>
-<script src="index.js"></script>
+<!-- <footer id="sticky">ALL RIGHTS RESERVED "MAGEBIT" 2016</footer> -->
+<script src="/js/index.js"></script>
 
 </body>
 </html>

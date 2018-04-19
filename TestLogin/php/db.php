@@ -1,8 +1,8 @@
 <?php
+// initializing variables
+$username = "";
+$email    = "";
 
-$dbServername = "localhost";
-$dbUsername = "root";
-$dbPassword = "";
-$dbName = "loginsystem";
+// connect to the database
+$db = mysqli_connect('localhost', 'root', '00700700', 'loginsystem');
 
-$conn = mysqli_connect("$dbServername, $dbUsername, $dbPassword, $dbName");

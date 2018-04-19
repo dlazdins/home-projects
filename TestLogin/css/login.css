@@ -1,0 +1,78 @@
+.content-black {
+  color: pink;
+}
+.login-form-header img{
+  display: inline;
+  float: right;
+  width: auto;
+  height: auto;
+  background: #ffff;
+  margin: -38px auto;
+}
+.login-form-header h2{
+  font-weight: 600;
+  position: relative;
+  color: rgb(64, 99, 162);
+}
+.login-form .input-container {
+  border-bottom: 1px solid #CCCCCC;
+  margin-top: 15px;
+  font-size: 20px;
+  color: #9e9e9e;
+  padding-bottom: 5px;
+}
+.login-form .input {
+  background-color: transparent;
+  border: 0px solid;
+  width: calc(100% - 40px);
+}
+.login-form .input:focus {
+    outline: none;
+    color: black;
+}
+#show-password {
+  float: right;
+  vertical-align: bottom;
+  text-align: center;
+  margin-top: 7px;
+  cursor: pointer;
+}
+.login-form .forgot-password {
+  float: right;
+  position: relative;
+  top: 40px;
+}
+.login-form .rememberme-container {
+  margin-top: 15px;
+  padding: 0;
+}
+.button-orange {
+  border-radius: 45px;
+  margin-top: 30px;
+  width: 140px;
+  height: 50px;
+  background: #f89a35;
+  font-family: "Tw Cen MT";
+  border: 0;
+  color: #FFFF;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 13px;
+}
+.login-form .button-orange:hover {
+  background: #f8bf35;
+}
+.signup-form .button-orange:hover {
+  background: #f8bf35;
+}
+.login-form .button-orange:focus {
+  outline: none;
+}
+.signup-form .button-orange:focus {
+  outline: none;
+}
+.login-form-content {
+  margin: 115px auto;
+  width: 250px;
+}
+
