@@ -1,9 +1,4 @@
 <?php
-session_start();
-echo '<pre>';
-var_dump($_POST);
-echo '</pre>';
-// die();
 include_once 'db.php';
 
 if (isset($_POST['signup'])) {

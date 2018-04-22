@@ -1,10 +1,5 @@
 <?php
   session_start();
-  $errors = [];
-  if (isset($_SESSION['success'])) {
-    echo $_SESSION['success'];
-    unset($_SESSION['success']);
-  }
 ?>
 <!DOCTYPE html>
 <html>
@@ -93,8 +88,7 @@
       </div>
     </div>
   </div>
-<!-- <footer id="sticky">ALL RIGHTS RESERVED "MAGEBIT" 2016</footer> -->
+<footer></footer>
 <script src="/js/index.js"></script>
-
 </body>
 </html>
