@@ -16,6 +16,31 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `attributes`
+--
+
+DROP TABLE IF EXISTS `attributes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `attributes` (
+  `attribute_id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL,
+  `attribute` varchar(256) NOT NULL,
+  `value` varchar(256) NOT NULL,
+  PRIMARY KEY (`attribute_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `attributes`
+--
+
+LOCK TABLES `attributes` WRITE;
+/*!40000 ALTER TABLE `attributes` DISABLE KEYS */;
+/*!40000 ALTER TABLE `attributes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `users`
 --
 
@@ -50,4 +75,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-04-22 21:14:33
+-- Dump completed on 2018-04-24 16:05:22
